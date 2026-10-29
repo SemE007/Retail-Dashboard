@@ -1,0 +1,10 @@
+these are the steps conducted to transform the data into a single, useable data model:
+
+Source: start with sales.csv
+Promote headers: add the included headers into the correct position
+Change types: data types are transformed into the correct ones; date, decimal, integer
+Trim product collumn: trim the trailling spaces from the supplier export
+Lowercase status: status contained many different versions of the same words, everything in lower case makes it equal
+Filter status =/ null: some rows were broken
+Inserted year, month & quarter: cut down OrderDate into integers
+Merged queries: merged Customers.csv & Regions.csv on the appropriate foreign keys
